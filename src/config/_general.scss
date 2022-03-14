@@ -1,0 +1,23 @@
+:root{
+    font-size: $fontSizeBase;
+}
+
+img{
+    width: 30%;
+}
+
+p,a{
+    font-size: $fontSizeAP;
+}
+h1{
+    font-size: $fontSizeTitulo;
+}
+h2{
+    font-size: $fontSizeSubTitulo;
+}
+
+@mixin listaflex($dir, $align){
+    display: flex;
+    flex-direction: $dir;
+    align-items: $align ;
+}
