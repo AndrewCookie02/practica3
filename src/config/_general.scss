@@ -3,11 +3,17 @@ $fontSizeBase: 10px;
 
 :root{
     font-size: $fontSizeBase;
+    margin: 0px;
+    padding: 0px;
 }
 
 @mixin animat{
     transition: ease-in-out 1s ;
     transform: scale(1.1);
+}
+@mixin animat2{
+    transition: ease-in-out 1s ;
+    transform:translateX(10px)
 }
 
 @mixin listaflex($dir, $align){
@@ -37,11 +43,13 @@ $fontSizeBase: 10px;
 
 .IntroCursos{
     background-color: antiquewhite;
+    
     border-top: solid $color4 ;
     box-shadow: 4px 3px 2px 2px rgb(221, 174, 221);
 }
 .IntroCursos li{
     background-color: rgb(152, 230, 230);
+    border-radius: 10px;
     &:hover{
         @include animat;
         background-color: crimson;

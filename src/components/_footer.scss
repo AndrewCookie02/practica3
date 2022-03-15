@@ -1,0 +1,24 @@
+#final{
+    background-color: antiquewhite;
+    margin: 10px;
+    border-radius: 30px;
+    display: flex;
+    @include listaflex(row,baseline);
+    margin-bottom: 30px;
+}
+
+#final ul{
+    @include listaflex(row,flex-start);
+}
+#final li{
+    padding-right: 20px;
+}
+
+#final .Subtitulos{
+    @include texto(20px, bold,$color1);
+    padding-top: 10px;
+    padding-left: 30px;
+}
+#final .parrafo{
+    @include texto(15px, bold,$color3 )
+}

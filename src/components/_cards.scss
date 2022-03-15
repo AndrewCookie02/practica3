@@ -1,17 +1,45 @@
 
 .card{
     @include listaflex(column, center) ;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    background-color: rgb(222, 248, 217);
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 50px;
+    box-shadow: 4px 3px 2px 2px rgb(221, 174, 221);
+    &:hover{
+        @include animat2;
+    }
+}
+
+.card > header{
+    background-color: rgb(203, 218, 170);
+    padding: 5px;
+    margin-top: 6px;
+    border-radius: 20px;
+
+    &:hover{
+        background-color: rgb(146, 172, 90);
+    }
+    
+    h2:hover{
+        color: $colorlight;
+    }
+
 }
 
 .card > div{
     @include listaflex(column, center);
+    margin: 30px;
 }
 
 .card > div > figure{
     @include listaflex(column, center);
 }
 
-.card:nth-child(2) div > figure{
+.card2 div > figure{
     @include listaflex(row, center);
 }
+
+
+

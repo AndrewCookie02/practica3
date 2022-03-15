@@ -5,6 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
 :root {
   font-size: 10px;
+  margin: 0px;
+  padding: 0px;
 }
 
 #bienvenida {
@@ -23,6 +25,7 @@
 
 .IntroCursos li {
   background-color: #98e6e6;
+  border-radius: 10px;
 }
 
 .IntroCursos li:hover {
@@ -51,7 +54,35 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  background-color: #def8d9;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 50px;
+  -webkit-box-shadow: 4px 3px 2px 2px #ddaedd;
+          box-shadow: 4px 3px 2px 2px #ddaedd;
+}
+
+.card:hover {
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.card > header {
+  background-color: #cbdaaa;
+  padding: 5px;
+  margin-top: 6px;
+  border-radius: 20px;
+}
+
+.card > header:hover {
+  background-color: #92ac5a;
+}
+
+.card > header h2:hover {
+  color: #faf2f2;
 }
 
 .card > div {
@@ -68,6 +99,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 30px;
 }
 
 .card > div > figure {
@@ -86,7 +118,7 @@
           justify-content: center;
 }
 
-.card:nth-child(2) div > figure {
+.card2 div > figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,6 +132,17 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+img {
+  border-radius: 30px;
+}
+
+img:hover {
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
 }
 
 #img1, #img3, #img4 {
@@ -160,7 +203,7 @@ header {
 
 .Subtitulos {
   font-family: "Noto Sans", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: #141488;
 }
@@ -174,9 +217,9 @@ header {
 
 .parrafo {
   font-family: "Roboto Mono", monospace;
-  font-size: 18px;
-  font-weight: bold;
-  color: #141488;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #c23535;
 }
 
 /*
@@ -219,6 +262,61 @@ class="parrafo"
 .IntroCursos li {
   padding: 5px;
   margin: 5px;
+}
+
+#final {
+  background-color: antiquewhite;
+  margin: 10px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+#final ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#final li {
+  padding-right: 20px;
+}
+
+#final .Subtitulos {
+  font-size: 20px;
+  font-weight: bold;
+  color: #141488;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+#final .parrafo {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ad05ad;
 }
 
 ul {
