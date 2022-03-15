@@ -1,23 +1,53 @@
+
+$fontSizeBase: 10px;
+
 :root{
     font-size: $fontSizeBase;
 }
 
-img{
-    width: 30%;
-}
-
-p,a{
-    font-size: $fontSizeAP;
-}
-h1{
-    font-size: $fontSizeTitulo;
-}
-h2{
-    font-size: $fontSizeSubTitulo;
+@mixin animat{
+    transition: ease-in-out 1s ;
+    transform: scale(1.1);
 }
 
 @mixin listaflex($dir, $align){
     display: flex;
     flex-direction: $dir;
     align-items: $align ;
+    justify-content: center;
+}
+
+@mixin imgwidth ( $width){
+    width: $width;
+}
+
+@mixin posTexto ($flexdir, $alignIt){
+    display: flex;
+    flex-direction: $flexdir;
+    align-items: $alignIt;
+}
+
+#bienvenida{
+    background-color: rgb(134, 182, 236);
+    border-bottom: solid $color1;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    
+}
+
+.IntroCursos{
+    background-color: antiquewhite;
+    border-top: solid $color4 ;
+    box-shadow: 4px 3px 2px 2px rgb(221, 174, 221);
+}
+.IntroCursos li{
+    background-color: rgb(152, 230, 230);
+    &:hover{
+        @include animat;
+        background-color: crimson;
+        
+    }
+    a:hover{
+        color: $colorlight
+    }
 }

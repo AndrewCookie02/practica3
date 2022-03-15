@@ -1,4 +1,17 @@
 
 .card{
-    @include listaflex(column, center)
+    @include listaflex(column, center) ;
+    margin-bottom: 100px;
+}
+
+.card > div{
+    @include listaflex(column, center);
+}
+
+.card > div > figure{
+    @include listaflex(column, center);
+}
+
+.card:nth-child(2) div > figure{
+    @include listaflex(row, center);
 }

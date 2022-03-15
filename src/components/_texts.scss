@@ -1,0 +1,58 @@
+@mixin texto ($size, $weight, $color ){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    }
+
+
+
+header{
+    @include posTexto (column, center);
+}
+
+@mixin setFont ($font) {
+    font-family: $font;
+    
+}
+
+#tituloPrincipal{
+    margin-bottom: 0px;
+    @include setFont($TxtPrinp) ;
+    @include texto(40px, bold, $color1) ;
+    &:hover{
+        color: $color2 ;
+        @include animat;
+    }
+}
+#SubtPrincipal{
+    @include setFont($TxtPrinp);
+    @include texto(30px,bold,$color2 );
+    &:hover{
+        color: $colorlight;
+    }
+}
+.Subtitulos{
+    @include setFont($subsbtn) ;
+    @include texto(20px, bold,$color1 )
+}
+.btn{
+    @include setFont($subsbtn) ;
+    @include texto(15px, 300,$color1 )
+}
+
+.parrafo{
+    @include setFont($parr) ;
+    @include texto(18px, bold,$color1 )
+}
+
+
+
+
+/*
+id="tituloPrincipal"
+id="SubtPrincipal"
+class="Subtitulos"
+class="btn"
+class="parrafo"
+*/
+
