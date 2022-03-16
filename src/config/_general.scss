@@ -33,6 +33,12 @@ $fontSizeBase: 10px;
     align-items: $alignIt;
 }
 
+
+@mixin colorback($color){background-color: $color;
+}
+
+
+
 #bienvenida{
     background-color: rgb(134, 182, 236);
     border-bottom: solid $color1;

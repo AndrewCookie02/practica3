@@ -55,7 +55,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
-  background-color: #def8d9;
   margin-left: 50px;
   margin-right: 50px;
   border-radius: 50px;
@@ -70,8 +69,28 @@
           transform: translateX(10px);
 }
 
+.card-Art {
+  background-color: #def8d9;
+}
+
+.card-Illustracion {
+  background-color: #f1e8bc;
+}
+
+.card-Fotografia {
+  background-color: #def8d9;
+}
+
+.card-model3d {
+  background-color: #f1e8bc;
+}
+
+.card-animacion {
+  background-color: #def8d9;
+}
+
 .card > header {
-  background-color: #cbdaaa;
+  background-color: #9bc792;
   padding: 5px;
   margin-top: 6px;
   border-radius: 20px;
@@ -118,7 +137,7 @@
           justify-content: center;
 }
 
-.card2 div > figure {
+.card-Illustracion div > figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,7 +284,7 @@ class="parrafo"
 }
 
 #final {
-  background-color: antiquewhite;
+  background-color: #f1e8bc;
   margin: 10px;
   border-radius: 30px;
   display: -webkit-box;
@@ -303,6 +322,7 @@ class="parrafo"
 
 #final li {
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 #final .Subtitulos {
@@ -317,6 +337,24 @@ class="parrafo"
   font-size: 15px;
   font-weight: bold;
   color: #ad05ad;
+}
+
+#final li {
+  border-right: solid #e98930;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+form ~ a {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #e98930;
+}
+
+form ~ a:hover {
+  background-color: #a9beec;
 }
 
 ul {

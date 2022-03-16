@@ -1,8 +1,15 @@
 
+@mixin setcolor($name, $color){
+    //Creando el nombre de la clase CSS concatenando el selector padre y utilizando la interpolación
+    &-#{$name}{
+        background-color: $color;
+            
+    }
+}
+
 .card{
     @include listaflex(column, center) ;
     margin-bottom: 50px;
-    background-color: rgb(222, 248, 217);
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 50px;
@@ -10,10 +17,34 @@
     &:hover{
         @include animat2;
     }
+
+    &-#{$arteLabel}{
+        @include colorback($colorbackg);
+    }
+
+    &-#{$ilustracionLabel}{
+        @include colorback($colorbackg2);
+    }
+
+    &-#{$FotografiaLabel}{
+        @include colorback($colorbackg);
+    }
+
+    &-#{$model3dLabel}{
+        @include colorback($colorbackg2);
+    }
+
+    &-#{$animacionLabel}{
+        @include colorback($colorbackg);
+    }
+
 }
 
+
+
+
 .card > header{
-    background-color: rgb(203, 218, 170);
+    background-color: rgb(155, 199, 146);
     padding: 5px;
     margin-top: 6px;
     border-radius: 20px;
@@ -37,7 +68,7 @@
     @include listaflex(column, center);
 }
 
-.card2 div > figure{
+.card-Illustracion div > figure{
     @include listaflex(row, center);
 }
 
